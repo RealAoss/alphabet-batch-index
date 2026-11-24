@@ -2,19 +2,13 @@
 
 Build a printable alphabetical directory from one name per line.
 
-Open `index.html` in a modern browser. Edit the sample inputs to update the result, then print or download it. Processing stays in the tab.
+## Run
+
+Use Node.js 20+. Run `node cli.mjs example.txt`, or pipe UTF-8 text into `node cli.mjs -`. Redirect stdout to keep the result. Other Node.js projects can import `transform` from `./transform.mjs`.
 
 ## Example
 
-Input:
-
-```text
-Ben
-Amy
-Anne
-```
-
-Expected output includes:
+Names, one per line. The bundled sample produces output including:
 
 ```text
 A
@@ -24,11 +18,11 @@ Anne
 
 ## Limitations
 
-Use the input format shown in the worked example. The transformation runs in browser memory; export the result before closing the tab.
+Input is processed in memory. Use the format shown in the example file.
 
 ## Development
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and test commands, and the [changelog](CHANGELOG.md) for project history.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for checks and [CHANGELOG.md](CHANGELOG.md) for changes.
 
 ## License
 

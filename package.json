@@ -1,0 +1,15 @@
+{
+  "name": "alphabet-batch-index",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Build a printable alphabetical directory from one name per line.",
+  "license": "MIT",
+  "type": "module",
+  "exports": "./transform.mjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
